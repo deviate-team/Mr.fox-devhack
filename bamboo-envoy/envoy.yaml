@@ -45,7 +45,7 @@ static_resources:
                   typed_config:
                     "@type": type.googleapis.com/envoy.extensions.filters.http.router.v3.Router
   clusters:
-    - name: echo_service
+    - name: bamboo-grpc
       connect_timeout: 0.25s
       type: logical_dns
       http2_protocol_options: {}

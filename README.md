@@ -11,7 +11,12 @@ API communication: REST API or GRPC
 # How to run
 
 ```bash
-docker-compose -f ./bamboo-grpc/docker-compose.yml -f ./bamboo-envoy/docker-compose.yaml -f ./bamboo-client/docker-compose.yaml up
+docker-compose -f ./bamboo-grpc/docker-compose.yaml up -d
+cd bamboo-envoy
+docker build -t bamboo-envoy -f . .
+docker run -d -p 8080:8080 --link bamboo-grpc:bamboo-grpc --net=bamboo-grpc_bamboo bamboo-envoy -d
+cd ..
+cd bamboo-client
 ```
 
 > client host: http://localhost:3000
