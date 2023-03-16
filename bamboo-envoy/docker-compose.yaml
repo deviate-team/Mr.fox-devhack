@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  bamboo-envoy:
+    build: .
+    container_name: bamboo-envoy
+    image: bamboo-envoy
+    ports:
+      - "8080:8080"
+    links:
+      - bamboo-grpc:bamboo-grpc
+    networks:
+      - bamboo-grpc_bamboo
+
+networks:
+  bamboo-grpc_bamboo:
+    external: true

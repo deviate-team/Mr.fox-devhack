@@ -1,0 +1,42 @@
+export const mockup = [
+  {
+    id: 1,
+    title: "Learn Vue",
+    description: "Learn Vue",
+    status: "Todo",
+    priority: "Low",
+    dueDate: "2023-03-01T03:15:11.650Z",
+  },
+  {
+    id: 2,
+    title: "Learn Vue Router",
+    description: "Learn Vue Router",
+    status: "In Progress",
+    priority: "Medium",
+    dueDate: "2023-03-01T03:15:11.650Z",
+  },
+  {
+    id: 3,
+    title: "Learn Vuex",
+    description: "Learn Vuex",
+    status: "Done",
+    priority: "High",
+    dueDate: "2023-03-01T03:15:11.650Z",
+  },
+  {
+    id: 4,
+    title: "Learn Vue Composition API",
+    description: "Learn Vue Composition API",
+    status: "Todo",
+    priority: "Low",
+    dueDate: "2023-03-01T03:15:11.650Z",
+  },
+  {
+    id: 5,
+    title: "Learn Vue 3",
+    description: "Learn Vue 3",
+    status: "In Progress",
+    priority: "Medium",
+    dueDate: "2023-03-01T03:15:11.650Z",
+  },
+];
