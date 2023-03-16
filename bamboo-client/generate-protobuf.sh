@@ -7,5 +7,5 @@ npx proto-loader-gen-types --longs=String --enums=String \
 
 # Generate JS and TS code
 protoc -I=./proto ./proto/*.proto \
-  --js_out=import_style=commonjs,binary:${PROTO_DIR} \
+  --js_out=import_style=es6,binary:${PROTO_DIR} \
   --grpc-web_out=import_style=typescript,mode=grpcwebtext:${PROTO_DIR}

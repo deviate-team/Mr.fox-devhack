@@ -11,18 +11,6 @@
 /* eslint-disable */
 // @ts-nocheck
 
-var jspb = require('google-protobuf');
-var goog = jspb;
-var global =
-    (typeof globalThis !== 'undefined' && globalThis) ||
-    (typeof window !== 'undefined' && window) ||
-    (typeof global !== 'undefined' && global) ||
-    (typeof self !== 'undefined' && self) ||
-    (function () { return this; }).call(null) ||
-    Function('return this')();
-
-var google_protobuf_empty_pb = require('google-protobuf/google/protobuf/empty_pb.js');
-goog.object.extend(proto, google_protobuf_empty_pb);
 goog.exportSymbol('proto.todo.DeleteTodoRequest', null, global);
 goog.exportSymbol('proto.todo.GetTodoReply', null, global);
 goog.exportSymbol('proto.todo.GetTodoRequest', null, global);
@@ -1385,4 +1373,3 @@ proto.todo.DeleteTodoRequest.prototype.setId = function(value) {
 };
 
 
-goog.object.extend(exports, proto.todo);
