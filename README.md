@@ -14,7 +14,7 @@ API communication: REST API or GRPC
 docker-compose -f ./bamboo-grpc/docker-compose.yaml up -d
 cd bamboo-envoy
 docker build -t bamboo-envoy -f . .
-docker run -d -p 8080:8080 --link bamboo-grpc:bamboo-grpc --net=bamboo-grpc_bamboo bamboo-envoy -d
+docker run -d -p 8080:8080 --link bamboo-grpc:bamboo-grpc --net=bamboo-grpc_bamboo bamboo-envoy 
 cd ..
 cd bamboo-client
 ```
