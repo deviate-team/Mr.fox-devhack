@@ -19,9 +19,6 @@ cd ..
 cd bamboo-client
 ```
 
-> client host: http://localhost:3000
-
-
 # How to submit
 
 1. Fork this repository
